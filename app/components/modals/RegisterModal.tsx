@@ -11,6 +11,7 @@ import useRegisterModal from "@/app/hooks/useRegisterModal";
 import Modal from "./Modal";
 
 import Button from "../Button";
+import Heading from "../Heading";
 
 const RegisterModal = () => {
   const registerModal = useRegisterModal();
@@ -44,7 +45,11 @@ const RegisterModal = () => {
       });
   };
 
-  const bodyContent = <div className="flex flex-col gap-4"></div>;
+  const bodyContent = (
+    <div className="flex flex-col gap-4">
+      <Heading title="Hello" />
+    </div>
+  );
 
   return (
     <Modal

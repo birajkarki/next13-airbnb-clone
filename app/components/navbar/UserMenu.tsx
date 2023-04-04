@@ -5,6 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { useRouter } from "next/navigation";
 
 import useRegisterModal from "@/app/hooks/useRegisterModal";
+import useLoginModal from "@/app/hooks/useLoginModal";
 
 import MenuItem from "./MenuItem";
 import Avatar from "../Avatar";
@@ -17,6 +18,8 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
   const router = useRouter();
 
   const registerModal = useRegisterModal();
+
+  const loginModal = useLoginModal();
 
   const [isOpen, setIsOpen] = useState(false);
 
